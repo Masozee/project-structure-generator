@@ -1,0 +1,75 @@
+project_root/
+├── cmd/
+│   └── server/
+│       └── main.go
+├── internal/
+│   ├── domain/
+│   │   ├── user.go
+│   │   ├── ticket.go
+│   │   ├── hotel.go
+│   │   ├── product.go
+│   │   └── payment.go
+│   ├── repository/
+│   │   ├── user_repository.go
+│   │   ├── ticket_repository.go
+│   │   ├── hotel_repository.go
+│   │   ├── product_repository.go
+│   │   └── payment_repository.go
+│   ├── usecase/
+│   │   ├── user_usecase.go
+│   │   ├── ticket_usecase.go
+│   │   ├── hotel_usecase.go
+│   │   ├── product_usecase.go
+│   │   └── payment_usecase.go
+│   ├── delivery/
+│   │   └── http/
+│   │       ├── handler/
+│   │       │   ├── user_handler.go
+│   │       │   ├── ticket_handler.go
+│   │       │   ├── hotel_handler.go
+│   │       │   ├── product_handler.go
+│   │       │   └── payment_handler.go
+│   │       └── middleware/
+│   │           ├── auth_middleware.go
+│   │           └── cors_middleware.go
+│   └── infrastructure/
+│       ├── database/
+│       │   └── postgresql.go
+│       └── xendit/
+│           └── client.go
+├── pkg/
+│   ├── logger/
+│   │   └── logger.go
+│   └── validator/
+│       └── validator.go
+├── config/
+│   └── config.go
+├── web/
+│   ├── template/
+│   │   ├── base.html
+│   │   ├── home.html
+│   │   ├── ticket.html
+│   │   ├── hotel.html
+│   │   └── shop.html
+│   └── static/
+│       ├── css/
+│       ├── js/
+│       └── img/
+├── migrations/
+│   ├── 001_create_users_table.up.sql
+│   ├── 001_create_users_table.down.sql
+│   └── ...
+├── scripts/
+│   ├── dev-setup.sh
+│   └── prod-deploy.sh
+├── Dockerfile.dev
+├── Dockerfile.prod
+├── docker-compose.dev.yml
+├── docker-compose.prod.yml
+├── .env.development
+├── .env.production
+├── .env.example
+├── .gitignore
+├── go.mod
+├── go.sum
+└── README.md
